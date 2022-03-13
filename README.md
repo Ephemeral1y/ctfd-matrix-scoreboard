@@ -1,2 +1,3 @@
 # ctfd-matrix-scoreboard
-a CTFd matrix scoreboard for individual competition
+## Usage
+copy it to plugins/ and restart ctfd
