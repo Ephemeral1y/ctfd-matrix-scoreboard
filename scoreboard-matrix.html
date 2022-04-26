@@ -10,7 +10,7 @@
         font-size: 12px;
         line-height: 0.8;
     }
-    
+
     .chalname>div {
         position: relative;
         top: 0px;
@@ -21,7 +21,7 @@
         -webkit-transform: skew(-45deg, 0deg);
         transform: skew(-45deg, 0deg);
     }
-    
+
     .chalname span {
         display: inline-block;
         position: absolute;
@@ -32,11 +32,17 @@
         -webkit-transform: skew(45deg, 0deg) rotate(315deg);
         transform: skew(45deg, 0deg) rotate(315deg);
     }
-    
+
+    .table img {
+        display: block;
+        width: 2.15rem;
+        height: auto;
+    }
+
     .chalmark {
         font-size: 20px;
     }
-    
+
     .matrix {
         overflow-x: scroll;
         cursor: grab;
@@ -122,10 +128,15 @@
                     {% for chal in challenges %}
                     <td class="chalmark">
                         {% if chal.id in team.solves %} {% if 1 in team.blood[chal.id]%}
-                        <img src="/matrix/static/medal1.png" width="30%" height="30%"> {% elif 2 in team.blood[chal.id] %}
-                        <img src="/matrix/static/medal2.png" width="30%" height="30%"> {% elif 3 in team.blood[chal.id] %}
-                        <img src="/matrix/static/medal3.png" width="30%" height="30%"> {% else %}
-                        <img src="/matrix/static/flag.png" width="30%" height="30%"> {% endif %} {% else %} {% endif %}
+                        <img src="/matrix/static/medal1.png" width="100%" height="100%"> {% elif 2 in
+                        team.blood[chal.id]
+                        %}
+                        <img src="/matrix/static/medal2.png" width="100%" height="100%"> {% elif 3 in
+                        team.blood[chal.id]
+                        %}
+                        <img src="/matrix/static/medal3.png" width="100%" height="100%"> {% else %}
+                        <img src="/matrix/static/flag.png" width="100%" height="100%"> {% endif %} {% else %} {% endif
+                        %}
                     </td>
                     {% endfor %}
                 </tr>
@@ -139,8 +150,8 @@
 <script>
     var challenges = {
         {
-            challenges | tojson
-        }
+        challenges | tojson
+    }
     };
 </script>
 <script src="{{ request.script_root }}/themes/{{ theme }}/assets/js/utils.js"></script>

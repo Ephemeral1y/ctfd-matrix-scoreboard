@@ -21,7 +21,7 @@ from CTFd.utils.dates import (
 )
 from CTFd.utils.user import is_admin, authed
 
-NumberOfChallenges = 30 # 题目数量
+NumberOfChallenges = 40 # 题目数量
 num_re = 0
 num_cry = 0
 num_pwn = 0
