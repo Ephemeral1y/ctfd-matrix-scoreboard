@@ -1,3 +1,3 @@
 # ctfd-matrix-scoreboard
 ## Usage
-copy it to plugins/ and restart CTFd
+clone it to plugins/ and restart CTFd
