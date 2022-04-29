@@ -119,50 +119,6 @@ def load(app):
                 else:
                     pass
             
-            
-            # for x in chals:
-            #     if "REVERSE" in x.category:
-            #         jchals.append({
-            #         'id': x.id,
-            #         'name': x.name,
-            #         'category': x.category,
-            #         'value' : x.value,
-            #         'category_num': num_re
-            #     })
-            #     elif "CRYPTO" in x.category:
-            #         jchals.append({
-            #         'id': x.id,
-            #         'name': x.name,
-            #         'category': x.category,
-            #         'value' : x.value,
-            #         'category_num': num_cry
-            #     })
-            #     elif "PWN" in x.category:
-            #         jchals.append({
-            #         'id': x.id,
-            #         'name': x.name,
-            #         'category': x.category,
-            #         'value' : x.value,
-            #         'category_num': num_pwn
-            #     })
-            #     elif "WEB" in x.category:
-            #         jchals.append({
-            #         'id': x.id,
-            #         'name': x.name,
-            #         'category': x.category,
-            #         'value' : x.value,
-            #         'category_num': num_web
-            #     })
-            #     elif "MISC" in x.category:
-            #         jchals.append({
-            #         'id': x.id,
-            #         'name': x.name,
-            #         'category': x.category,
-            #         'value' : x.value,
-            #         'category_num': num_misc
-            #     })
-            #     else:
-            #         pass
             for x in chals:
                     jchals.append({
                     'id': x.id,
